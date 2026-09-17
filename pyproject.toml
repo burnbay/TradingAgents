@@ -48,6 +48,11 @@ bedrock = [
 [project.scripts]
 tradingagents = "cli.main:app"
 
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+]
+
 [tool.setuptools.packages.find]
 include = ["tradingagents*", "cli*"]
 
